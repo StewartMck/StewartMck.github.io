@@ -1,0 +1,251 @@
+html {
+  background-image: url("./assets/bg.jpg");
+  background-size: 100% 100%;
+}
+
+#container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Bebas Neue", cursive;
+}
+
+#container .nav-button {
+  align-self: flex-end;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.contact-sidebar {
+  font-size: 1.5em;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  transition: 0.5s;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  opacity: 0.9;
+}
+
+.contact-sidebar ul {
+  list-style-type: none;
+}
+
+.title {
+  text-align: center;
+  align-self: center;
+  font-size: 2em;
+  align-items: center;
+  color: whitesmoke;
+  letter-spacing: 0.5em;
+}
+
+.story {
+  font-size: 1.2em;
+  align-self: center;
+  text-align: center;
+  border: 0.2em solid;
+  border-radius: 0.5em;
+  margin: 0 4em 0 4em;
+  color: whitesmoke;
+  margin-bottom: 2em;
+  letter-spacing: 0.3em;
+}
+
+.story p {
+  margin: 0 1em 1em 1em;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-sidebar .close-btn {
+  margin-right: 0.2em;
+  margin-top: 0.2em;
+  align-self: flex-end;
+}
+
+.nav-button i {
+  margin-right: 0.2em;
+  margin-top: 0.2em;
+  color: whitesmoke;
+}
+
+.nav-button i:hover {
+  cursor: pointer;
+}
+
+.close-btn i {
+  cursor: pointer;
+}
+
+.resume-section i:hover,
+.contact-section i:hover {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.contact-sidebar i {
+  font-size: 1.4em;
+  color: black;
+}
+.contact i {
+  padding-bottom: 1em;
+}
+
+.projects,
+.future-projects {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0 2em 0em 2em;
+  border-radius: 0.8em;
+  background-color: whitesmoke;
+  flex-shrink: 2;
+}
+
+.projects article,
+.future-projects article {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.projects a,
+.future-projects a {
+ color:black;
+ text-decoration: none;
+}
+
+.projects article:hover,
+.future-projects article:hover {
+  position: relative;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1em 1em 1em 1em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-container i {
+  color: whitesmoke;
+}
+
+.menu,
+.menu-selected-projects,
+.menu-future-projects,
+.menu-currently-learning {
+  font-size: 1em;
+  border: solid 0.2em whitesmoke;
+  background: transparent;
+  color: whitesmoke;
+  padding: 1em;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.3em;
+  opacity: 0.5;
+}
+
+.menu {
+  opacity: 1;
+  font-size: 1.2em;
+}
+
+.menu:focus {
+  outline: none;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.menu-selected-projects:hover,
+.menu-future-projects:hover,
+.menu-currently-learning:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu-selected-projects:focus,
+.menu-future-projects:focus,
+.menu-currently-learning:focus {
+  opacity: 1;
+  outline: none;
+}
+
+.projects p,
+.future-projects p {
+  max-width: 20em;
+  padding: 0.5em;
+}
+
+.projects img,
+.future-projects img {
+  max-width: 15em;
+  height: auto;
+}
+
+.continued-education {
+  align-self: center;
+  display: flex;
+  font-size: 2em;
+  align-items: baseline;
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  justify-content: space-evenly;
+  border-radius: 0.8em;
+  width: 60%;
+}
+
+.continued-education img {
+  width: 3em;
+}
+
+.java-learning {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+footer {
+  align-self: flex-end; 
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-container {
+    align-self: center;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .menu-container button {
+    margin-bottom: 0.3em;
+  }
+
+  .menu-container i {
+    visibility: hidden;
+  }
+
+  .menu {
+    align-self: center;
+  }
+
+  .story {
+    margin: 0 2em 0 2em;
+  }
+}
